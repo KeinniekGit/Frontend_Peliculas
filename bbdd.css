@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#barra p {
+    margin-right: 2rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#formulario-btn {
+    margin: 10px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+#form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#form-table thead {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#form-table th, #form-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#form-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#form-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn.btn-danger {
+    background-color: red; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn.btn-danger:hover {
+    background-color: #c82333;
+}
+
+#form-table td.comentario {
+    width: 300px;
+    text-align: left; 
+}
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-info, .footer-social {
+    flex: 1 1 10px; 
+    margin: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #barra {
+        margin-top: 10px;
+    }
+
+    #formulario-btn {
+        margin: 5px 0;
+    }
+
+    #form-table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bbdd.css">
+</head>
+<body>
+    <header>
+        <section id="logo">
+            <img src="https://w7.pngwing.com/pngs/130/1021/png-transparent-movie-logo-movie-logo-film-tape-cinema.png" alt="Logo de Cine" width="50px">
+            <h1>Peli-Series</h1>
+        </section>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="series.html">Series</a>
+            <a href="form.html">Contáctenos</a>
+        </nav>
+        <section id="barra">
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </section>
+    </header>
+    <main>
+        <table id="form-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Dirección</th>
+                    <th>Comentario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-info">
+                <h2>Contacto</h2>
+                <p>Email: contacto@peli-series.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </section>
+            <section class="footer-social">
+                <h2>Síguenos</h2>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Peli-Series. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="request.js"></script>
+    <script src="usuarios.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mostrarDatos();
+        });
+    </script>
+</body>
+</html>
