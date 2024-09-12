@@ -71,7 +71,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-#formulario-btn {
+#formulario-btn{
     margin: 10px;
 }
 
@@ -81,8 +81,14 @@ main {
 }
 
 h2 {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; 
+    background-color: #0a4076;
+    border-radius: 5px; 
     color: white;
-    text-align: center;
 }
 
 #form-table {
@@ -123,7 +129,7 @@ h2 {
     background-color: #218838;
 }
 
-.btn.btn-danger {
+.btn-danger {
     background-color: red; 
     color: #fff;
     border: none;
@@ -132,7 +138,7 @@ h2 {
     border-radius: 20px;
 }
 
-.btn.btn-danger:hover {
+.btn-danger:hover {
     background-color: #c82333;
 }
 

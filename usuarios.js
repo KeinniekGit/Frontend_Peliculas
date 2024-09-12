@@ -15,7 +15,7 @@ function mostrarDatos() {
                     <td>${element.direccion}</td>
                     <td>${element.comentario}</td>
                     <td>
-                        <button type="button" class="btn btn-primary" onclick="window.location='/form.html?id=${element._id}'">Editar</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location='form.html?id=${element._id}'">Editar</button>
                         <button type="button" class="btn btn-danger" onclick="eliminarusuarios('${element._id}')">Eliminar</button>
                     </td>
                 </tr>
@@ -64,8 +64,10 @@ function guardarOmodificarDatos(_id = null) {
     let request = sendRequest(url, metodo, data);
     
     request.onload = function () {
-        if (request.status === 200) {
+        if (request.status === 200 && metodo === 'POST') {
             window.location = 'index.html';
+        } else if (request.status === 200 && metodo === 'PUT') {
+        window.location = 'bbdd.html';        
         } else {
             alert(`Error en la solicitud de ${metodo}`);
         }
@@ -75,6 +77,7 @@ function guardarOmodificarDatos(_id = null) {
         alert(`Error en la solicitud de ${metodo}`);
     };
 }
+
 
 function cargarDatos(_id) {
     let request = sendRequest('usuarios/' + _id, 'GET', '');
@@ -93,6 +96,7 @@ function cargarDatos(_id) {
                     campos[info].value = data[info];
                 }
             }
+            document.getElementById('form-id').value = _id;
         } else {
             alert("Error al cargar los datos");
         }
@@ -102,3 +106,4 @@ function cargarDatos(_id) {
         alert("Error al cargar los datos");
     };
 }
+

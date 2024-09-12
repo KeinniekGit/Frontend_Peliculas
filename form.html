@@ -26,6 +26,7 @@
     <main class="contenedorForm">
         <h2>Déjanos tu comentario</h2>
         <form id="usuario-form" action="" method="post">
+            <input type="hidden" id="form-id" value="">
             <div>
                 <label for="nombre-n">Nombre</label>
                 <input type="text" class="nombre" name="nombre" id="nombre-n">
@@ -42,8 +43,9 @@
                 <label for="comentario-c">Comentario</label>
                 <textarea class="comentario" name="comentario" id="comentario-c" rows="5" required></textarea>
             </div>
-            <button type="button" class="guardar-btn" onclick="guardarOmodificarDatos()">Enviar</button>
+            <button type="button" class="guardar-btn" onclick="guardarOmodificarDatos(document.getElementById('form-id').value)">Enviar</button>
         </form>
+        
     </main>
     <footer>
         <div class="footer-content">
@@ -63,6 +65,7 @@
             <p>&copy; 2024 Peli-Series. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="password/index.js"></script>
     <script src="request.js"></script>
     <script src="usuarios.js"></script>
     <script>
